@@ -112,15 +112,17 @@ li, nav, ul {
 }
 
 .bg_text {
-  font-size: 500px;
+  font-size: calc(100px + 400 * ((100vw - 320px) / 1650));
   text-transform: uppercase;
   position: absolute;
   top: 30%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   opacity: 0.05;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .header {
